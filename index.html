@@ -13,17 +13,12 @@
     
     <div id="app">
 
-        <!--Creare lista dove stampare le eiamil-->
-        <button
-        @click="createEmail"
-        >
-
-            click
-
-        </button>
+        <!--Creare lista dove stampare le Email-->
         <ul>
-            <li>
-                {{ mail }}
+            <li
+            v-for="email in emails"
+            >
+                {{ email }}
             </li>
         </ul>
     </div>
