@@ -13,7 +13,9 @@
     <div id="app">
 
         <!--Creare lista dove stampare le Email-->
-        <ul>
+        <ul
+        v-if="visibleEmails"
+        >
             <li
             v-for="email in emails"
             >
